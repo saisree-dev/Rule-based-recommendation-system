@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rule-Based Recommendation System</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-brain"></i>
+
+            Recommendation System
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html" class="active">Dashboard</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="add-item.html">Add Item</a></li>
+            <li><a href="items.html">Items</a></li>
+            <li><a href="recommendation.html">Recommendation</a></li>
+            <li><a href="login.html">Logout</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>Welcome to Rule-Based Recommendation System</h1>
+
+        <p>
+
+            Manage categories, add products, track likes & views, and generate recommendations.
+
+        </p>
+
+        <a href="items.html" class="btn">
+
+            View Items
+
+        </a>
+
+    </section>
+
+    <!-- Dashboard -->
+
+    <section class="dashboard">
+
+        <h2>Dashboard Overview</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-box fa-2x"></i>
+
+                <h3>Total Items</h3>
+
+                <h1 id="totalItems">0</h1>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-eye fa-2x"></i>
+
+                <h3>Total Views</h3>
+
+                <h1 id="totalViews">0</h1>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-heart fa-2x"></i>
+
+                <h3>Total Likes</h3>
+
+                <h1 id="totalLikes">0</h1>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-layer-group fa-2x"></i>
+
+                <h3>Total Categories</h3>
+
+                <h1 id="totalCategories">0</h1>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Recommendation -->
+
+    <section class="recommendation">
+
+        <h2>Today's Recommendation</h2>
+
+        <div class="recommend-card">
+
+            <i class="fa-solid fa-star fa-3x"></i>
+
+            <h1 id="bestCategory">
+
+                No Recommendation
+
+            </h1>
+
+            <p id="recommendationMessage">
+
+                Add items and increase likes/views to generate recommendations.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Rule-Based Recommendation System
+
+        </p>
+
+    </footer>
+
+    <script src="js/storage.js"></script>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
