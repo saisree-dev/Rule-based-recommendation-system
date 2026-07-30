@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Categories</title>
+
+    <link rel="stylesheet" href="css/categories.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-brain"></i>
+
+            Recommendation System
+
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Dashboard</a></li>
+
+            <li><a href="categories.html" class="active">Categories</a></li>
+
+            <li><a href="add-item.html">Add Item</a></li>
+
+            <li><a href="items.html">Items</a></li>
+
+            <li><a href="recommendation.html">Recommendation</a></li>
+
+            <li><a href="analytics.html">Analytics</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Main Content -->
+
+    <div class="container">
+
+        <h1>
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            Manage Categories
+
+        </h1>
+
+        <!-- Add Category -->
+
+        <div class="form-box">
+
+            <h2>Add New Category</h2>
+
+            <input
+                type="text"
+                id="categoryName"
+                placeholder="Enter Category Name">
+
+            <button id="addCategoryBtn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Category
+
+            </button>
+
+        </div>
+
+        <!-- Category Table -->
+
+        <div class="table-box">
+
+            <h2>Category List</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Category</th>
+
+                        <th>Edit</th>
+
+                        <th>Delete</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="categoryTableBody">
+
+                    <!-- Categories will be added here by JavaScript -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        © 2026 Rule-Based Recommendation System
+
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/categories.js"></script>
+
+</body>
+
+</html>

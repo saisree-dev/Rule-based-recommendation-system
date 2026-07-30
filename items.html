@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Items</title>
+
+<link rel="stylesheet" href="css/items.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-brain"></i>
+
+Recommendation System
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Dashboard</a></li>
+
+<li><a href="categories.html">Categories</a></li>
+
+<li><a href="add-item.html">Add Item</a></li>
+
+<li><a href="items.html" class="active">Items</a></li>
+
+<li><a href="recommendation.html">Recommendation</a></li>
+
+<li><a href="analytics.html">Analytics</a></li>
+
+</ul>
+
+</nav>
+
+<div class="container">
+
+<h1>
+
+<i class="fa-solid fa-box-open"></i>
+
+All Items
+
+</h1>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchItem"
+placeholder="Search Item...">
+<button id="searchBtn">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Search
+
+</button>
+
+</div>
+
+<div class="table-box">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Image</th>
+
+<th>Item Name</th>
+
+<th>Category</th>
+
+<th>Price</th>
+
+<th>Likes</th>
+
+<th>Views</th>
+
+<th>Edit</th>
+
+<th>Delete</th>
+
+</tr>
+
+</thead>
+
+<tbody id="itemsTableBody">
+
+<tr>
+
+<td>1</td>
+
+<td><img src="images/laptop.jpg" alt="Laptop"></td>
+
+<td>Laptop</td>
+
+<td>Electronics</td>
+
+<td>$800</td>
+
+<td>120</td>
+
+<td>350</td>
+
+<td>
+
+<button class="edit">
+
+<i class="fa-solid fa-pen"></i>
+
+</button>
+
+</td>
+
+<td>
+
+<button class="delete">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td><img src="images/book.jpg" alt="Book"></td>
+
+<td>Java Book</td>
+
+<td>Books</td>
+
+<td>$30</td>
+
+<td>85</td>
+
+<td>240</td>
+
+<td>
+
+<button class="edit">
+
+<i class="fa-solid fa-pen"></i>
+
+</button>
+
+</td>
+
+<td>
+
+<button class="delete">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td><img src="images/headphone.jpg" alt="Headphone"></td>
+
+<td>Headphone</td>
+
+<td>Electronics</td>
+
+<td>$120</td>
+
+<td>98</td>
+
+<td>410</td>
+
+<td>
+
+<button class="edit">
+
+<i class="fa-solid fa-pen"></i>
+
+</button>
+
+</td>
+
+<td>
+
+<button class="delete">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Rule-Based Recommendation System
+
+</footer>
+<script src="js/storage.js"></script>
+<script src="js/items.js"></script>
+</body>
+
+</html>

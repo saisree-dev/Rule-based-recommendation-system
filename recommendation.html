@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recommendations</title>
+
+    <link rel="stylesheet" href="css/recommendation.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-brain"></i>
+
+            Recommendation System
+
+        </div>
+
+        <ul>
+
+            <li><a href="index.html">Dashboard</a></li>
+
+            <li><a href="categories.html">Categories</a></li>
+
+            <li><a href="add-item.html">Add Item</a></li>
+
+            <li><a href="items.html">Items</a></li>
+
+            <li><a href="recommendation.html" class="active">Recommendation</a></li>
+
+            <li><a href="analytics.html">Analytics</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Header -->
+
+    <section class="header">
+
+        <h1>
+
+            <i class="fa-solid fa-star"></i>
+
+            Rule-Based Recommendations
+
+        </h1>
+
+        <p>
+
+            Recommendations are generated automatically using Likes and Views.
+
+        </p>
+
+    </section>
+
+    <!-- Best Category -->
+
+    <section class="category-card">
+
+        <h2>Top Recommended Category</h2>
+
+        <div class="category-box">
+
+            <i class="fa-solid fa-award fa-3x"></i>
+
+            <h1 id="topCategory">
+
+                No Recommendation
+
+            </h1>
+
+            <p id="categoryReason">
+
+                Add items and increase likes/views to generate recommendations.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Recommended Products -->
+
+    <section class="items">
+
+        <h2>Top Recommended Products</h2>
+
+        <div class="cards" id="recommendationCards">
+
+        </div>
+
+    </section>
+
+    <!-- Rules -->
+
+    <section class="rules">
+
+        <h2>Recommendation Rules</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Rule</th>
+
+                <th>Description</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Likes Weight</td>
+
+                <td>Each Like contributes 2 points.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Views Weight</td>
+
+                <td>Each View contributes 1 point.</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Recommendation Score</td>
+
+                <td>Score = (Likes × 2) + Views</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Best Category</td>
+
+                <td>Category having the highest total score is recommended.</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <footer>
+
+        © 2026 Rule-Based Recommendation System
+
+    </footer>
+
+    <script src="js/storage.js"></script>
+
+    <script src="js/recommendation.js"></script>
+
+</body>
+
+</html>

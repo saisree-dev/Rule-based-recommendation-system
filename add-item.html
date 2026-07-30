@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Item</title>
+
+    <link rel="stylesheet" href="css/add-item.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-brain"></i>
+            Recommendation System
+        </div>
+
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="add-item.html" class="active">Add Item</a></li>
+            <li><a href="items.html">Items</a></li>
+            <li><a href="recommendation.html">Recommendation</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Form -->
+
+    <div class="container">
+
+        <div class="form-card">
+
+            <h1>
+                <i class="fa-solid fa-box"></i>
+                Add New Item
+            </h1>
+
+            <form id="itemForm">
+
+                <label>Item Name</label>
+
+                <input
+                    type="text"
+                    id="itemName"
+                    placeholder="Enter Item Name">
+
+                <label>Category</label>
+
+                <select id="category">
+
+                    <option value="">Select Category</option>
+
+                </select>
+
+                <label>Price</label>
+
+                <input
+                    type="number"
+                    id="price"
+                    placeholder="Enter Price">
+
+                <label>Description</label>
+
+                <textarea
+                    id="description"
+                    rows="5"
+                    placeholder="Enter Description"></textarea>
+
+                <label>Upload Image</label>
+
+                <input
+                    type="file"
+                    id="image"
+                    accept="image/*">
+
+                <br><br>
+
+                <img
+                    id="preview"
+                    src=""
+                    alt="Preview"
+                    width="150"
+                    style="display:none;border-radius:10px;">
+
+                <br><br>
+
+                <button
+                    type="button"
+                    id="saveItemBtn">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Save Item
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        © 2026 Rule-Based Recommendation System
+
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/add-item.js"></script>
+
+</body>
+
+</html>
